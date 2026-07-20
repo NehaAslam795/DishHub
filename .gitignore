@@ -1,0 +1,7 @@
+AI-Recipe-Maker/client/node_modules/
+server/node_modules/
+
+AI-Recipe-Maker/client/dist/
+
+.env
+**/.env
