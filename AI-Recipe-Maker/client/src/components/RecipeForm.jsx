@@ -74,12 +74,13 @@ function RecipeForm({
       setLoading(true);
 
       const response = await axios.post(
-        "http://localhost:5000/api/recipes",
-        {
-  ingredients: selected,
-  category,
-}
-      );
+  `${import.meta.env.VITE_API_URL}/api/recipes`,
+  {
+    ingredients: selected,
+    category,
+  }
+);
+      
 
       setRecipe(response.data.recipe);
 
